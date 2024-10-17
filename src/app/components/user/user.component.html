@@ -1,0 +1,15 @@
+<p>user works!</p>
+
+<div *ngFor="let user of userDetail">
+  <img
+    (click)="goToDetail(user.id)"
+    src=" {{ user.avatar }} "
+    alt="non disponibile"
+  />
+
+  <p>nome: {{ user.first_name }}</p>
+
+  <p>cognome: {{ user.last_name }}</p>
+
+  <p>e-mail: {{ user.email }}</p>
+</div>
